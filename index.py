@@ -20,7 +20,7 @@ CORS(app)
 # ==================== CẤU HÌNH ====================
 # ⚠️ QUAN TRỌNG: Thay URL này bằng URL thật của main.py sau khi deploy lên Replit/VPS
 # Ví dụ: https://ff-bot.your-username.repl.co
-BOT_SERVER_URL = os.environ.get('BOT_SERVER_URL', 'http://localhost:5901')
+BOT_SERVER_URL = os.environ.get('BOT_SERVER_URL', 'http://team56-gawc36fwm-anhcode2008s-projects.vercel.app')
 
 # Cache lưu trạng thái request (do Vercel serverless)
 request_cache = {}
@@ -246,10 +246,10 @@ if __name__ == '__main__':
 ╔══════════════════════════════════════════════════════════════╗
 ║   🎮 FF SQUAD BOT - API GATEWAY (Development Mode)          ║
 ╠══════════════════════════════════════════════════════════════╣
-║  ✅ Gateway running on: http://localhost:5000                ║
+║  ✅ Gateway running on: http://team56-gawc36fwm-anhcode2008s-projects.vercel.app              ║
 ║  📡 Forwarding to bot server: {}      
 ║  ⚠️  Make sure main.py is running on the target server!     ║
-║  🔍 Test connection: http://localhost:5000/health            ║
+║  🔍 Test connection: http://team56-gawc36fwm-anhcode2008s-projects.vercel.app/health            ║
 ╚══════════════════════════════════════════════════════════════╝
     """.format(BOT_SERVER_URL))
     app.run(host='0.0.0.0', port=5000, debug=False)
